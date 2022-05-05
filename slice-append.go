@@ -8,13 +8,21 @@ import "fmt"
 
 func main() {
 
-	a := []int{1, 2, 3, 4}
+	a := [4]int{1, 2, 3, 4}
 
 	b := a[1:3]
 
 	//增加切片容量时，会创建并使用新的底层数组
-	b = append(b, 14, 8)
+	b = append(b, 14, 8, 9, 10)
 
 	fmt.Println(a, b)
 
+	c := make([]int, 2, 2)
+
+	c[0] = 10
+	c[1] = 10
+
+	c = append(c, 20, 30)
+
+	fmt.Println(c)
 }
