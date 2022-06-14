@@ -14,4 +14,8 @@ func main() {
 
 	fmt.Println(1 << 27)
 	fmt.Println(1024 * 1024 * 128)
+
+	var c, d = 23, 3
+	var e = c / d
+	fmt.Println(e)
 }
